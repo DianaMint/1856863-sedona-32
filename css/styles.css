@@ -274,8 +274,11 @@ text-align: center;
 }
 
 .background-inner {
-  background-image: url("..images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog/catalog-background.jpg");
   background-color: #83B3D3;
+  background-repeat: no-repeat;
+  background-size: 1200px 410px;
+
 }
 
 .inner-header-title {
