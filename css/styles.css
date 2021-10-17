@@ -34,6 +34,12 @@ body {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
 .page-header {
   color: #000000;
 }
@@ -220,8 +226,6 @@ text-align: center;
   font-size: 24px;
   line-height: 28px;
 }
-
-
 
 .advantage-info {
   font-style: normal;
@@ -451,6 +455,8 @@ line-height: 21px;
   text-transform: uppercase;
   background-color: #83B3D3;
   border-radius: 4px;
+  width: 160px;
+  border: none;
 }
 
 .button-reset {
@@ -460,6 +466,9 @@ line-height: 21px;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  border: none;
 }
 
 .finds {
@@ -568,5 +577,105 @@ line-height: 21px;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
+}
+
+.inner-header {
+  margin: 0;
+  padding: 0;
+  width: 528px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 71px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+}
+.catalog-filter-features {
+  padding-left: 71px;
+  padding-right: 67px;
+  width: 150px;
+}
+
+.catalog-filter-list-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 72px;
+}
+
+.catalog-filter-list-type {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+  padding-right: 167px;
+
+}
+
+.button-types {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 81px;
+  padding-right: 72px;
+}
+
+.results {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1057px;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.finds {
+  padding-right: 192px;
+  width: 340px;
+}
+
+.view {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.select-control {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 287px;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  width: 1056px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 72px;
+  padding-left: 72px;
 }
 
