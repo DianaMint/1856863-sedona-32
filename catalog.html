@@ -7,47 +7,49 @@
   </head>
   <body>
     <header class="page-header">
-        <nav class="navigation">
-         <ul class="navigation-list">
-           <li class="navigation-item">
-             <a class="navigation-link left-item" href="index.html">
-               Главная
-             </a>
-           </li>
-           <li class="navigation-item left-item">
-             <a class="navigation-link left-item" href="about.html">
-               О Седоне
-              </a>
-            </li>
-            <li class="navigation-item left-item">
-              <a class="navigation-link" href="catalog.html">
-               Гостиницы
-              </a>
-            </li>
-          </ul>
-          <img class="navigation-logo" src="images/logo-sedona.png" width="138px" height="70px" alt="Logo Sedona">
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item right-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                   Поиск
-                </span>
-              </a>
-            </li>
-            <li class="navigation-item right-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                   Избранное
-                </span>
-              </a>
-            </li>
-            <li class="navigation-item right-item">
-              <a class="navigation-link" href="#">
-                Хочу сюда!
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="navigation">
+       <ul class="navigation-list">
+         <li class="navigation-item">
+           <a class="navigation-link" href="index.html">
+             Главная
+           </a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigation-link" href="about.html">
+             О Седоне
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">
+             Гостиницы
+            </a>
+          </li>
+        </ul>
+        <img class="navigation-logo" src="images/logo-sedona.png" width="138px" height="70px" alt="Logo Sedona">
+        <ul class="navigation-user">
+          <li class="menu-search-item">
+            <a class="menu-search-link" href="#">
+              <span class="visually-hidden">
+                 Поиск
+              </span>
+              <img class="menu-search" src="images/menu-search.png" width="18px" height="18px" alt="search">
+            </a>
+          </li>
+          <li class="menu-favorit-item">
+            <a class="menu-favorit-link" href="#">
+              <span class="visually-hidden">
+                 Избранное
+              </span>
+              <img class="menu-favorit" src="images/menu-fav.png" width="31px" height="27px" alt="favorit">
+            </a>
+          </li>
+          <li class="link-here-item">
+            <a class="catalog-link" href="#">
+              Хочу сюда!
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-inner">
       <div class="page-container">
@@ -58,9 +60,17 @@
             </h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <span class="visually-hidden">
+                    Главная
+                  </span>
+                  <img class="main-page" src="images/catalog/main-page.png" width="12px" height="12px" alt="main menu">
+                </a>
               </li>
-              <li>
+              <li class="breadcrumbs-item">
+                <img class="vector-catalog-1" src="images/catalog/Vector-1.png" width="5px" height="8px">
+              </li>
+              <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
@@ -68,7 +78,7 @@
           <section class="catalog-products">
             <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group-features">
                 <legend class="catalog-filter-features">Инфраструктура</legend>
                 <ul class="catalog-filter-list-features">
                   <li class="catalog-filter-item">
@@ -94,7 +104,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group-type">
                 <legend class="catalog-filter-type">Тип Жилья</legend>
                 <ul class="catalog-filter-list-type">
                   <li class="catalog-filter-item">
@@ -257,19 +267,19 @@
         <h2 class="newsletter-title">
           Подпишитесь на рассылку
         </h2>
-        <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
+        <p class="newsletter-title-info">
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="newsletter-email">
-          <label for="newsletter-email" class="visually-hidden">
-            Email
-          </label>
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        </p>
-        <button class="button newsletter-button" type="submit">
-          Подписаться
-        </button>
+          <p class="newsletter-email">
+            <label for="newsletter-email" class="visually-hidden">
+             Email
+            </label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          </p>
+          <button class="button newsletter-button" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
       <div class="footer-bottom">
@@ -280,7 +290,7 @@
                 <span class="visually-hidden">
                   Твиттер
                 </span>
-                <img class="button-twitter" src="images\icons\tw.png" alt="Иконка Твиттера">
+                <img class="button-twitter" src="images\icons\tw.png" width="18px" height="15px" alt="Иконка Твиттера">
               </a>
             </li>
             <li class="footer-social-item">
@@ -288,7 +298,7 @@
                 <span class="visually-hidden">
                   Фейсбук
                 </span>
-                <img class="button-facebook" src="images\icons\fb.png" alt="Иконка Фейсбука">
+                <img class="button-facebook" src="images\icons\fb.png" width="10px" height="18px" alt="Иконка Фейсбука">
               </a>
             </li>
             <li class="footer-social-item">
@@ -296,7 +306,7 @@
                 <span class="visually-hidden">
                   Youtube
                 </span>
-                <img class="button-youtube" src="images/icons/yb.png" alt="Иконка Youtube">
+                <img class="button-youtube" src="images/icons/yb.png" width="20px" height="16px" alt="Иконка Youtube">
               </a>
             </li>
           </ul>
