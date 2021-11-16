@@ -1314,30 +1314,6 @@ margin-bottom: 26px;
   font-size: 18px;
   position: relative;
 }
-/*
-.catalog-filter-label-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  width: 143px;
-  padding-right: 4px;
-  border: 2px solid #FFFFFF;
-  border-right: 2px solid #FFFFFF;
-  border-radius: 4px 0px 0px 4px;
-
-}
-
-.catalog-filter-label-right {
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 144px;
-  border: 2px solid #FFFFFF;
-  border-radius: 0 4px 4px 0;
-}
-*/
 
 .range-input {
   appearance: textfield;
@@ -1375,27 +1351,35 @@ margin-bottom: 26px;
   border: 2px solid #FFFFFF;
   border-radius: 0 4px 4px 0;
   outline: none;
-  padding-left: 13px;
-
+  padding-left: 17px;
+  border-left: none;
 }
 
 .catalog-filter-label-left {
-  position: absolute;
+  position: relative;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  transform: translate(-20px, 0px);
-  opacity: 0.3;
-
 }
 
-.catalog-filter-label-right {
+.catalog-filter-label-left::after {
   position: absolute;
+  right: 0;
+  margin: 0 16px;
+  color: rgba(255, 255, 255, 0.7);
+  content: "от";
+}
+.catalog-filter-label-right {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  transform: translate(117px, 0px);
-  opacity: 0.3;
+}
+
+.catalog-filter-label-right::after {
+  position: absolute;
+  right: 0;
+  margin: 0 16px;
+  color: rgba(255, 255, 255, 0.7);
+  content: "до";
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1410,16 +1394,19 @@ margin-bottom: 26px;
 
 .range-input-right:hover {
   border: 2px solid rgba(255, 255, 255, 0.6);
+  border-left: none;
 }
 
 .range-input-left:focus {
   outline: 2px solid #81B3D2;
   box-shadow: inset 0px 0px 0px 2px #81B3D2;
+  z-index: 1;
 }
 
 .range-input-right:focus {
   outline: 2px solid #81B3D2;
   box-shadow: inset 0px 0px 0px 2px #81B3D2;
+  border-left: none;
 }
 
 
@@ -1430,6 +1417,7 @@ margin-bottom: 26px;
 
 .range-input-right:active {
   background-color: #756257;
+  border-left: none;
 }
 
 .range-input {
