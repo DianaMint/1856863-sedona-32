@@ -92,6 +92,9 @@ body {
   margin-left: 9px;
 }
 
+.navigation-item:nth-child(3) ~ li {
+  margin-top: 22px;
+}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -189,7 +192,7 @@ body {
 }
 
 .cart-12 {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -292,7 +295,7 @@ body {
   position: absolute;
   display: flex;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -339,7 +342,7 @@ body {
 }
 
 .cart-item-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -355,7 +358,7 @@ body {
 }
 
 .cart-item-type {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -459,6 +462,7 @@ border-radius: 0px 0px 20px 20px;
   background-repeat: no-repeat;
   background-size: 1200px 485px;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .main-pictures {
@@ -590,7 +594,7 @@ border-radius: 0px 0px 20px 20px;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  padding-top: 61px;
+  padding-top: 96px;
 }
 
 .other-adventages {
@@ -601,13 +605,13 @@ border-radius: 0px 0px 20px 20px;
   justify-content: center;
   align-items: center;
   width: 400px;
-  min-height: 384px;
+
 }
 
 .other-advantage-info {
   padding-right: 75px;
   padding-left: 75px;
-  padding-bottom: 77px;
+  padding-bottom: 112px;
   margin: 0;
   padding-top: 28px;
 }
@@ -635,14 +639,22 @@ border-radius: 0px 0px 20px 20px;
 
 .col-8 {
   background-color: rgba(131, 179, 211, 0.12);
+  background-size: cover;
 }
 
 .col-9 {
   background-color: rgba(131, 179, 211, 0.20);
+  background-size: cover;
 }
 
 .col-10 {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.other-adventage-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .advantage-title {
@@ -656,7 +668,7 @@ border-radius: 0px 0px 20px 20px;
 .background-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -1316,7 +1328,7 @@ margin-bottom: 26px;
   justify-content: center;
   margin-top: 35px;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1332,7 +1344,7 @@ margin-bottom: 26px;
   height: 41px;
   width: 120px;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1351,7 +1363,7 @@ margin-bottom: 26px;
   height: 41px;
   width: 124px;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1432,7 +1444,7 @@ margin-bottom: 26px;
   border: none;
   background-color: transparent;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1572,7 +1584,7 @@ margin-bottom: 26px;
   margin: 0;
   padding: 0;
   margin-top: 48px;
-  margin-bottom: 42px;
+  margin-bottom: 47px;
 }
 
 .sorting-type {
@@ -1710,25 +1722,10 @@ margin-bottom: 26px;
   line-height: 11px;
   margin: 0;
   padding: 0;
+  padding-bottom: 8px;
 }
 
-.product-rating {
-  color: #333333;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  display: inline-block;
-  box-sizing: border-box;
-  min-height: 37px;
-  width: 160px;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 10px;
-}
+
 
 .product-details,
 .wishlist {
@@ -1824,7 +1821,7 @@ margin-bottom: 26px;
 }
 
 .button-show-more {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
@@ -1836,7 +1833,7 @@ margin-bottom: 26px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 31px;
   display: block;
   box-sizing: border-box;
   width: 625px;
@@ -1861,6 +1858,9 @@ margin-bottom: 26px;
   background-color: #68A2CA;
 }
 
+
+
+
 .pagination {
   margin: 0;
   padding: 0;
@@ -1881,7 +1881,7 @@ margin-bottom: 26px;
   width: 378px;
   margin: 0;
   padding: 0;
-  margin-top: 65px;
+  margin-top: 62px;
   margin-left: 71px;
   margin-right: 285px;
   padding-right: 8px;
@@ -1937,7 +1937,7 @@ margin-bottom: 26px;
 .select-number {
   margin: 0;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 53px;
 }
 
 .hotels-on-page {
@@ -1980,7 +1980,7 @@ margin-bottom: 26px;
 .select-hotel,
 .hostels-on-page {
   color: #333333;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2008,17 +2008,14 @@ margin-bottom: 26px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 38px;
+  line-height: 30px;
   text-decoration: none;
   margin: 0;
   grid-column: 1 / 3;
-  box-sizing: border-box;
-  border: 3px solid transparent;
-  border-radius: 10px;
   max-width: fit-content;
-  padding: 5px 14px;
-  margin-left: -18px;
-  margin-top: -18px;
+  margin-left: -1px;
+  margin-top: -4px;
+  margin-bottom: 7px;
 }
 
 .product-card-title:hover {
@@ -2027,10 +2024,9 @@ margin-bottom: 26px;
 
 .product-card-title:focus {
   color: #756257;
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 10px;
-  outline: none;
+  outline: 3px solid #83B3D3;
+  border-radius: 5px;
+  outline-offset: 5px;
 }
 
 .product-card-title:active {
@@ -2040,11 +2036,21 @@ margin-bottom: 26px;
 .catalog-list {
   margin: 0;
   padding: 0;
-  width: 1056px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 1056px;
   padding-right: 72px;
   padding-left: 72px;
+}
+
+.catalog-list::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 1056px;
+  background-color: #E6E6E6;
+  transform: translate(0px, 841px);
 }
 
 .product-card {
@@ -2070,14 +2076,24 @@ margin-bottom: 26px;
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-.vector-stars {
-  padding-bottom: 63px;
-  align-self: center;
-  max-width: 91px;
-  max-height: 17px;
+.product-rating {
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 37px;
+  width: 160px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .stars {
@@ -2086,6 +2102,7 @@ margin-bottom: 26px;
   margin: 0;
   padding: 0;
   justify-content: center;
+  margin-top: 3px;
   margin-bottom: 57px;
   margin-left: 7px;
 }
@@ -2289,7 +2306,7 @@ margin-bottom: 26px;
 
 .modal-title {
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2302,7 +2319,7 @@ margin-bottom: 26px;
 .modal-lable {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2335,7 +2352,7 @@ margin-bottom: 26px;
   padding-left: 19px;
   border: none;
   outline: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2386,7 +2403,7 @@ input[type="number"]::-moz-placeholder {
 }
 
 .error-message {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2396,7 +2413,7 @@ input[type="number"]::-moz-placeholder {
 }
 
 .date-message {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2435,7 +2452,7 @@ input[type="number"]::-moz-placeholder {
   background-color: #F2F2F2;
   vertical-align: middle;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2606,7 +2623,7 @@ input[type="number"]::-moz-placeholder {
   display: flex;
   align-items: center;
   width: 216px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2651,7 +2668,7 @@ input[type=number] {
   color: #FFFFFF;
   background-color: #83B3D3;
   background-repeat: no-repeat;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
