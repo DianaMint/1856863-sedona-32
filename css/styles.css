@@ -79,7 +79,7 @@ body {
   padding: 0;
   list-style-type: none;
   margin-left: 63px;
-  width: 344px;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -88,12 +88,10 @@ body {
 
 .navigation-item {
   margin-bottom: 8px;
+  margin-right: 24px;
+  margin-left: 9px;
 }
 
-.navigation-item:nth-child(2) {
-  margin-left: 15px;
-  margin-right: 16px;
-}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -104,7 +102,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   position: relative;
-  padding: 3px 9px;
 }
 
 .navigation-link:hover {
@@ -113,8 +110,8 @@ body {
 
 .navigation-link:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 10px;
-  padding: 3px 9px;
+  border-radius: 2px;
+  outline-offset: 5px;
 }
 
 .navigation-link:active {
@@ -124,7 +121,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 0;
-  bottom: -18px;
+  bottom: -22px;
   display: flex;
   left: 0;
   height: 2px;
@@ -251,7 +248,7 @@ body {
 
 .popover {
   width: 398px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   color: #000000;
   background-color: #FFFFFF;
@@ -295,7 +292,7 @@ body {
   position: absolute;
   display: flex;
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -342,7 +339,7 @@ body {
 }
 
 .cart-item-title {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -358,7 +355,7 @@ body {
 }
 
 .cart-item-type {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -487,6 +484,7 @@ border-radius: 0px 0px 20px 20px;
 .discription {
   padding: 0;
   margin: 0;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -616,15 +614,18 @@ border-radius: 0px 0px 20px 20px;
 
 .col-3 {
   background-color: rgba(131, 179, 211, 0.12);
+  position: relative;
 }
 
 .col-4 {
   background-color: white;
   color: #000000;
+  position: relative;
 }
 
 .col-5 {
   background-color: rgba(131, 179, 211, 0.12);
+  position: relative;
 }
 
 .col-7 {
@@ -655,7 +656,7 @@ border-radius: 0px 0px 20px 20px;
 .background-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -674,6 +675,7 @@ border-radius: 0px 0px 20px 20px;
   line-height: 28px;
   margin: 0;
   padding-top: 23px;
+  margin-top: 47px;
 }
 
 .advantage-info {
@@ -716,15 +718,18 @@ border-radius: 0px 0px 20px 20px;
 }
 
 .advantage-vector-1 {
-  padding-top: 89px;
+ position: absolute;
+ transform: translate(-36px, -1px);
 }
 
 .advantage-vector-2 {
-  padding-top: 91px;
+  position: absolute;
+  transform: translate(-37px, 1px);
 }
 
 .advantage-vector-3 {
-  padding-top: 85px;
+  position: absolute;
+  transform: translate(-31px, -5px);
 }
 
 .advantages-list li{
@@ -834,6 +839,7 @@ border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
   color: black;
+  background-color: #FFFFFF;
   font-style: normal;
   justify-content: center;
   align-items: center;
@@ -868,6 +874,7 @@ border-radius: 0px 0px 20px 20px;
   text-align: center;
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
+  background-color: #83B3D3;
 }
 
 .newsletter {
@@ -1056,6 +1063,7 @@ margin-bottom: 26px;
 .background-inner {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
+  background-color: #F2F2F2;
   padding-top: 35px;
 }
 
@@ -1308,7 +1316,7 @@ margin-bottom: 26px;
   justify-content: center;
   margin-top: 35px;
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1324,7 +1332,7 @@ margin-bottom: 26px;
   height: 41px;
   width: 120px;
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1343,7 +1351,7 @@ margin-bottom: 26px;
   height: 41px;
   width: 124px;
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1424,7 +1432,7 @@ margin-bottom: 26px;
   border: none;
   background-color: transparent;
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1816,7 +1824,7 @@ margin-bottom: 26px;
 }
 
 .button-show-more {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
@@ -1972,7 +1980,7 @@ margin-bottom: 26px;
 .select-hotel,
 .hostels-on-page {
   color: #333333;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2281,7 +2289,7 @@ margin-bottom: 26px;
 
 .modal-title {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2294,7 +2302,7 @@ margin-bottom: 26px;
 .modal-lable {
   margin: 0;
   padding: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2327,7 +2335,7 @@ margin-bottom: 26px;
   padding-left: 19px;
   border: none;
   outline: none;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2378,7 +2386,7 @@ input[type="number"]::-moz-placeholder {
 }
 
 .error-message {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2388,7 +2396,7 @@ input[type="number"]::-moz-placeholder {
 }
 
 .date-message {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2427,7 +2435,7 @@ input[type="number"]::-moz-placeholder {
   background-color: #F2F2F2;
   vertical-align: middle;
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2437,7 +2445,6 @@ input[type="number"]::-moz-placeholder {
 
 .modal-input-adult {
   position: relative;
-  margin-right: 56px;
 }
 
 .button-minus-1,
@@ -2451,7 +2458,7 @@ input[type="number"]::-moz-placeholder {
 
 .button-minus-1 {
   position: absolute;
-  transform: translate(-174px, 12px);
+  transform: translate(-120px, 12px);
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -2469,7 +2476,7 @@ input[type="number"]::-moz-placeholder {
 
 .button-plus-1 {
   position: absolute;
-  transform: translate(-93px, 12px);
+  transform: translate(-38px, 12px);
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -2512,12 +2519,13 @@ input[type="number"]::-moz-placeholder {
 
 .modal-child {
   position: relative;
-  padding-right: 55px;
+  padding-right: 51px;
+  margin-left: 54px;
 }
 
 .button-minus-2 {
   position: absolute;
-  transform: translate(456px, -1px);
+  transform: translate(-119px, 11px);
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -2534,7 +2542,7 @@ input[type="number"]::-moz-placeholder {
 
 .button-plus-2 {
   position: absolute;
-  transform: translate(537px, -1px);
+  transform: translate(-37px, 11px);
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -2580,7 +2588,7 @@ input[type="number"]::-moz-placeholder {
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
-  transform: translate(399px, 1px);
+  transform: translate(110px, -37px);
   border-radius: 50%;
   color: white;
   display: flex;
@@ -2598,7 +2606,7 @@ input[type="number"]::-moz-placeholder {
   display: flex;
   align-items: center;
   width: 216px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2613,7 +2621,7 @@ input[type="number"]::-moz-placeholder {
   padding-top: 20px;
   padding-left: 22px;
   padding-bottom: 20px;
-  transform: translate(284px, 98px);
+  transform: translate(-4px, 4px);
 }
 
 .window-info::before {
@@ -2643,7 +2651,7 @@ input[type=number] {
   color: #FFFFFF;
   background-color: #83B3D3;
   background-repeat: no-repeat;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2673,5 +2681,5 @@ input[type=number] {
 }
 
 .modal-container-close {
-display: none;
+  display: none;
 }
